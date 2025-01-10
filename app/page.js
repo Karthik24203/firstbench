@@ -11,7 +11,7 @@ export default function Home() {
     <Header/>
       <div className="bg-gray-50 flex justify-center w-full">
         <Sidebar />
-        <div className="py-1 px-2 pb-0">
+        <div className="py-1 px-2 flex flex-col items-center justify-center gap-3 pb-0">
           <TopCard />
           <MidCard />
           <Graph />
