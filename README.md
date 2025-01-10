@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This is a project built on Nextjs framework
 
-## Getting Started
 
-First, run the development server:
+### 1. Install Dependencies
+
+Run the following command to install all necessary dependencies:
+
+```bash
+npm install
+```
+
+### 2. Start the Development Server
+
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Launch Drizzle Studio
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Visualize and manage your database with Drizzle Studio:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npx drizzle-kit studio
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ensure you create a `.env.local` file in the project root with the following structure:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```plaintext
+DATABASE_URL=<your-database-url>
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Replace `<your-database-url>` with the connection string for your database.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```plaintext
+# Public API key for your frontend
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=<your-publishable-key>
+
+# Secret API key for server-side authentication
+CLERK_SECRET_KEY=<your-secret-key>
+
+# Custom routes for Clerk's sign-in and sign-up pages
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+```
+
+Add the above clerk variables to your `.env.local` file. Replace `<your-publishable-key>` and `<your-secret-key>` with the keys from your Clerk dashboard.
+
+---
+
+### Ready to Go!
+
+Once the setup is complete, start the development server:
+
+```bash
+npm run dev
+```
+
+This template is ready for you to build and scale your Next.js application with ease.
+
+---
+
+Would you like additional sections for features, contributing guidelines, or troubleshooting?
