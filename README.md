@@ -2,9 +2,7 @@
 
 ## Already Deployed, vist the link below
 
-```bash
-https://firstbench-ten.vercel.app/
-```
+[https://firstbench-ten.vercel.app/](https://firstbench-ten.vercel.app/)
 
 ### 1. Install Dependencies
 
